@@ -1,0 +1,32 @@
+program Descending;
+uses crt;
+var 
+    n1, n2, n3 : shortint;
+
+begin 
+    clrscr;
+    write('Masukkan Nilai 1 : ');
+    readln(n1);
+    write('Masukkan Nilai 2 : ');
+    readln(n2);
+    write('Masukkan Nilai 3 : ');
+    readln(n3);
+
+    if (n1 > n2) and (n1 > n3) and (n2 > n3) then 
+        write(n1, n2, n3)
+
+    else if (n1 > n2) and (n1 > n3) and (n3 > n2) then 
+        write(n1, n3, n2)
+
+    else if (n2 > n1) and (n2 > n3) and (n1 > n3) then 
+        write(n2, n3, n1)
+
+    else if (n2 > n1) and (n2 > n3) and (n3 > n1) then 
+        write(n2, n3, n1)
+
+    else if (n3 > n1) and (n2 > n2) and (n1 > n2) then 
+        write(n3, n1, n2)
+
+    else 
+        write(n3, n2, n1)
+end.
